@@ -14,6 +14,18 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {};
 
   teste(){
-    this.mensagem.add("Teste");
+    this.mensagem.confirm("Teste");
+  }
+
+  alert(){
+    this.mensagem.alert("PFFFFFFFFFFFFF");
+  }
+
+  erro(){
+    this.mensagem.erro("KKKKKKKKKKK ovo curingaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+  }
+
+  neutro(){
+    this.mensagem.neutro("Foi tudo");
   }
 }

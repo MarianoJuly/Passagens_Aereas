@@ -1,53 +1,53 @@
-.message{
-  position: fixed;
-  display: block;
-
+.message {
+  position: absolute;
+  display: flex;
   top: 1em;
-
-  width: 15%;
-
+  width: 20%;
   margin-left: 53%;
   left: -15%;
-
   height: 100px;
-
   z-index: 10;
   border-radius: 15px;
   background-color: #fff;
   border: 1px solid #0e0e0e;
-  }
-
-.message_table{
-  position: absolute;
-
-  width: 30%;
-
-  margin-left: 0%;
-
-
-  height: 100px;
-
-  background: #F47676;
-  border: 0.5px solid #000000;
-  border-radius: 13px 0px 0px 13px;
-  }
-
-.message-header{
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1em;
+  justify-content: left;
 }
 
-.message-header h2{
+.message_table {
+  position: absolute;
+  width: 30%;
+  margin-left: 0%;
+  height: 100px;
+  background: #ffffff;
+  border: 0.5px solid #000000;
+  border-radius: 13px 0px 0px 13px;
+}
 
-  text-align: center;
+.message-header {
+  display: flex;
+  width: 100%;
+  top: 35%;
+  position: relative;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message-header h2 {
+  display: flex;
+  position: relative;
   font-size: 1em;
 }
 
-.message-header button{
+.message-header button {
   cursor: pointer;
+  border-radius: 27.5%;
+  align-self: flex-end;
 }
 
-.message-header p{
-  font-size: 0.5em;
+.message-header p {
+  max-width: 500px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

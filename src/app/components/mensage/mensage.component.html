@@ -1,14 +1,13 @@
 <div *ngIf="messagesS.message">
-      <div class="message">
-        <div class="message_table">
-          <div class="message-header">
-              <h2>Mensagem do Sistema:</h2>
-              <button class="clear" (click)="messagesS.clear()">
-              </button>
-          </div>
-          <P>
-              {{messagesS.message}}
-          </P>
+  <div class="message">
+    <div class="message_table" [style.background-color]="messagesS.colors"></div>
+        <div class="message-header">
+          <h2>Mensagem do Sistema:</h2>
+          <button class="clear" (click)="messagesS.clear()">X</button>
+            <P>
+                {{messagesS.message}}
+            </P>
       </div>
-      </div>
-</div>
+    </div>
+  </div>
+
