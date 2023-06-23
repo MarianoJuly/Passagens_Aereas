@@ -1,15 +1,35 @@
 .message{
   position: fixed;
-  top: 3em;
-  width: 50%;
-  margin-left: 50%;
-  left: -25%;
+  display: block;
+
+  top: 1em;
+
+  width: 15%;
+
+  margin-left: 53%;
+  left: -15%;
+
+  height: 100px;
+
   z-index: 10;
+  border-radius: 15px;
   background-color: #fff;
-  border: 3px solid #dec129;
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
+  border: 1px solid #0e0e0e;
+  }
+
+.message_table{
+  position: absolute;
+
+  width: 30%;
+
+  margin-left: 0%;
+
+
+  height: 100px;
+
+  background: #F47676;
+  border: 0.5px solid #000000;
+  border-radius: 13px 0px 0px 13px;
   }
 
 .message-header{
@@ -18,11 +38,16 @@
   margin-bottom: 1em;
 }
 
+.message-header h2{
+
+  text-align: center;
+  font-size: 1em;
+}
+
 .message-header button{
-  padding: 0.5em;
   cursor: pointer;
 }
 
 .message-header p{
-  font-size: 1.2em;
+  font-size: 0.5em;
 }
